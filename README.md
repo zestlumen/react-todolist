@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# react-todolist
+- React와 PostCSS를 사용하여 만든 투두리스트
+- 바로가기 https://zestlumen.github.io/react-todolist/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://github.com/zestlumen/react-todolist/assets/122693004/c43464e6-9114-40d6-a68d-76f8d68b11ce" width="600"/>
 
-## Available Scripts
+## 프로젝트 설명
+- useState,useEffect,useContext 리액트 훅 사용
+- PostCSS 사용으로 모듈화, className 안정성
+- useEffect로 localStorage에서 투두리스트 목록을 저장하고 읽어옴
+- Context API를 통해 다크모드 / 라이트모드 토글 구현
+- 순수 CSS로 다크모드 / 라이트모드 구현
+  (useEffect와 localStorage 저장)
+- 헤더에 전체리스트, 진행중인 리스트, 완료된 리스트를 필터링
 
-In the project directory, you can run:
+#### 다크모드 & Active 선택시 진행중인 화면
+  <img src="https://github.com/zestlumen/react-todolist/assets/122693004/f37c821f-8c30-4527-94b3-d5e55a4960dc" width="600"/>
 
-### `yarn start`
+#### Completed 선택시 완료된 리스트 화면
+  <img src="https://github.com/zestlumen/react-todolist/assets/122693004/41b193f7-6d07-4d7d-8099-286342af6123" width="600"/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 리스트 입력 - 엔터로 추가되며 입력창 초기화
+<img src="https://github.com/zestlumen/react-todolist/assets/122693004/f9562be2-2663-41b0-92ae-e89eb928935e" width="640"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 리스트 삭제 - X 버튼 클릭 시 삭제
+<img src="https://github.com/zestlumen/react-todolist/assets/122693004/d75ae67c-1f9e-4087-a3da-1634eebfeacf" width="500"/>
 
-### `yarn test`
+## 참고
+Dream Coding 리액트 강의
+http://academy.dream-coding.com/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
